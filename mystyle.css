@@ -1,0 +1,198 @@
+:root {
+    --primary-color: #432601;
+    --text-color: #350135;
+    --background-light: #ffffff;
+    --header-height: 100vh;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 110%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', Helvetica, sans-serif;
+    color: #030200;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+.header-background {
+    background: linear-gradient(rgba(255, 254, 253, 0.7), rgba(255, 254, 253, 0.9)), 
+                url("https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,q_75,w_1200/v1/crm/sanmateoca/Berkeley_glade_afternoon0-defee6535056a36_defee74b-5056-a36a-0bacee622f66a38c.jpg") center center fixed;
+    background-size: cover;
+    text-align: center;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(143, 145, 153);
+    padding: 15px;
+}
+
+nav ul {
+    list-style:none;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    padding-right: 4;
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Georgia', cursive;
+    font-size: 1.2rem;
+}
+
+.header-content img {
+    max-width: 250px;
+    border-radius: 50%;
+}
+
+.header-content h1, .header-content p {
+    margin: 0.5rem 0;
+    font-family: 'Georgia', cursive;
+}
+
+#about {
+    background-color: #ffffff; 
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 40px;
+    border-radius: 0.5%;
+    text-align: center;
+}
+
+.logo-picture{
+    height: 30px;
+    margin-left: 20px;
+    width: 60px;
+    float: left;
+    position:fixed;
+
+}
+
+.logo-format{
+    position:fixed;
+    float: left;
+    text-align: left;
+    
+}
+
+.profile-photo {
+    max-width: 40%;
+    height: auto; 
+    border-radius: 50%; 
+}
+
+#portfolio {
+    background-color: #11872545; 
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 300px;
+    padding-right: 300px;
+    border-radius: 0.5%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.project {
+    width: 350px;
+    height: 350px;
+    border: 2px solid #777575;
+    margin: 10px;
+    display: inline-block;
+    line-height: 200px;
+}
+
+#contact {
+    background-color: #c1c0bf; 
+    padding: 10px;
+    border-radius: 0%;
+    text-align: center;
+}
+
+.td-btn {
+    padding: 12px 36px;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease-in-out;
+     background-color: #f5eeee; 
+
+}
+
+footer {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 10px;
+}
+
+h2 {
+    color: #333;
+    font-family: 'Georgia', cursive;
+    font-size: 2rem;
+}
+
+a {
+    color: #adafaf;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #050606;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+  
+  .profile-photo {
+        width: 50%; 
+        margin: 0 auto; 
+    }
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    padding: 0.8rem 0;
+    border-radius: 0 0 12px 12px;
+}
+.icons li{
+    list-style-type: none;
+    background: #6b6a6b;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    margin: 0 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    cursor: pointer; 
+    transition: all 0.5s ease-in-out;
+}
+.icons li:hover{
+    background: #3d3d3d;
+    color: #000;
+}
